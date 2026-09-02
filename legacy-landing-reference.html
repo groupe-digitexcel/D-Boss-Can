@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>D-BOSS MOTOS | Devenez propriétaire de votre moto</title>
+<meta name="description" content="Candidatez en ligne au programme D-BOSS MOTOS. Sélection préliminaire rapide, transparente et sécurisée.">
+<meta property="og:title" content="D-BOSS MOTOS — Travaillez. Payez. Devenez propriétaire.">
+<meta property="og:description" content="Candidature en ligne • Pré-sélection • Contact des candidats répondant aux conditions préliminaires.">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#f5f7fa;color:#10243d}
+:root{--navy:#071b33;--blue:#123b68;--gold:#d6a63a;--gold2:#f1cf72;--white:#fff;--muted:#66768b;--line:#dfe6ee;--green:#14804a;--red:#b42318}
+.wrap{width:min(1120px,92%);margin:auto}.top{background:var(--navy);color:#fff;padding:11px 0;font-size:13px}.top .wrap{display:flex;justify-content:space-between;gap:12px}.lang{cursor:pointer;text-decoration:underline}
+header{background:linear-gradient(135deg,var(--navy),#0d3156);color:#fff;padding:22px 0 68px;position:relative;overflow:hidden}
+header:after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;right:-160px;top:-220px;background:#d6a63a22}
+.nav{display:flex;justify-content:space-between;align-items:center}.logo{font-size:24px;font-weight:950}.logo span{color:var(--gold2)}
+.nav a{color:#fff;text-decoration:none;margin-left:18px;font-weight:700;font-size:14px}
+.hero{display:grid;grid-template-columns:1.08fr .92fr;gap:35px;align-items:center;padding-top:55px}.eyebrow{color:var(--gold2);font-weight:900;letter-spacing:1px;text-transform:uppercase;font-size:13px}.hero h1{font-size:clamp(36px,6vw,64px);line-height:.98;margin:12px 0 18px}.hero p{font-size:18px;line-height:1.55;color:#dce7f4}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:14px 20px;font-weight:900;cursor:pointer;text-decoration:none}.primary{background:var(--gold);color:var(--navy)}.secondary{border:1px solid #ffffff55;color:#fff;background:#ffffff10}.hero-card{background:#fff;color:var(--navy);border-radius:22px;padding:24px;box-shadow:0 20px 60px #0004}.hero-card h3{margin:0 0 14px;font-size:21px}.mini{display:flex;gap:12px;align-items:flex-start;margin:14px 0}.icon{width:35px;height:35px;border-radius:10px;background:#fff4d3;display:grid;place-items:center}.mini b{display:block}.mini small{color:var(--muted)}
+section{padding:65px 0}.section-title{text-align:center;max-width:720px;margin:0 auto 35px}.section-title h2{font-size:34px;margin:0 0 10px}.section-title p{color:var(--muted);line-height:1.6}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.plan{background:#fff;border:2px solid var(--line);border-radius:18px;padding:22px;position:relative;box-shadow:0 7px 25px #071b3308}.plan.featured{border-color:var(--gold);transform:translateY(-5px)}.tag{position:absolute;right:15px;top:15px;background:#fff3c8;color:#6b4d00;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.plan h3{margin:0 0 7px}.price{font-size:29px;font-weight:950}.day{font-size:18px;font-weight:900;margin:7px 0}.plan ul{padding-left:20px;color:var(--muted);line-height:1.8;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}.num{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900;margin-bottom:13px}
+.form-wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:22px;align-items:start}.info{background:var(--navy);color:#fff;border-radius:20px;padding:26px;position:sticky;top:15px}.info h2{font-size:30px;margin-top:0}.info li{margin:13px 0;color:#dbe6f2}.form{background:#fff;border-radius:20px;padding:25px;border:1px solid var(--line);box-shadow:0 10px 35px #071b3309}.progress{height:8px;background:#e8edf3;border-radius:20px;overflow:hidden;margin-bottom:22px}.progress i{display:block;height:100%;background:var(--gold);width:33.33%;transition:.25s}.stepform{display:none}.stepform.active{display:block}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin:12px 0}.field label{display:block;font-size:13px;font-weight:900;margin-bottom:6px}.field input,.field select{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;font:inherit}.hint{font-size:12px;color:var(--muted);line-height:1.5}.consent{display:flex;gap:9px;font-size:12px;color:var(--muted);line-height:1.45}.consent input{margin-top:3px}.form-actions{display:flex;justify-content:space-between;gap:10px;margin-top:18px}.outline{background:#fff;border:1px solid var(--line);color:var(--navy)}.result{display:none;margin-top:18px;padding:18px;border-radius:14px}.result.show{display:block}.success{background:#eaf7ef;color:#12643c}.warning{background:#fff5df;color:#805500}.error{background:#fdecea;color:#9b2017}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:15px}.faq summary{font-weight:900;cursor:pointer}.faq p{color:var(--muted);line-height:1.6}
+footer{background:var(--navy);color:#dce7f4;padding:35px 0}.footergrid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footergrid b{color:#fff}.legal{font-size:11px;color:#aebdcd;line-height:1.6;margin-top:22px}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#168b51;color:#fff;border-radius:999px;padding:13px 17px;text-decoration:none;font-weight:900;box-shadow:0 8px 25px #0003;z-index:5}
+@media(max-width:850px){.hero,.form-wrap{grid-template-columns:1fr}.plans,.steps{grid-template-columns:1fr}.plan.featured{transform:none}.info{position:static}.faq{grid-template-columns:1fr}.nav a{display:none}}
+@media(max-width:600px){.row{grid-template-columns:1fr}.hero{padding-top:35px}.hero h1{font-size:43px}.top .wrap{font-size:11px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>🏍️ D-BOSS MOTOS • Candidature en ligne</span><span class="lang" onclick="toggleLang()">FR / EN</span></div></div>
+
+<header id="home">
+<div class="wrap">
+<div class="nav"><div class="logo">D-BOSS <span>MOTOS</span></div><div><a href="#plans">Formules</a><a href="#how">Comment ça marche</a><a href="#apply">Candidater</a></div></div>
+<div class="hero">
+<div>
+<div class="eyebrow">Travaillez • Payez • Devenez propriétaire</div>
+<h1>Votre moto.<br>Votre activité.<br><span style="color:var(--gold2)">Votre propriété.</span></h1>
+<p>Choisissez votre cadence, soumettez votre candidature en ligne et laissez D-BOSS MOTOS effectuer la présélection. <b>Seuls les candidats qui remplissent les conditions préliminaires sont contactés pour la suite.</b></p>
+<div class="cta"><a class="btn primary" href="#apply">🚀 CANDIDATER MAINTENANT</a><a class="btn secondary" href="#plans">Voir les formules</a></div>
+</div>
+<div class="hero-card">
+<h3>Pourquoi candidater en ligne ?</h3>
+<div class="mini"><div class="icon">⚡</div><div><b>Simple</b><small>Quelques informations pour commencer.</small></div></div>
+<div class="mini"><div class="icon">🔎</div><div><b>Présélection</b><small>Votre profil est étudié avant le contact.</small></div></div>
+<div class="mini"><div class="icon">🤝</div><div><b>Accompagnement</b><small>Notre équipe vous contacte si les conditions préliminaires sont remplies.</small></div></div>
+<div class="mini"><div class="icon">🔐</div><div><b>Vérification</b><small>La présélection n'est pas une approbation définitive.</small></div></div>
+</div>
+</div>
+</div>
+</header>
+
+<section id="plans">
+<div class="wrap">
+<div class="section-title"><h2>Choisissez votre cadence</h2><p>Plus vous choisissez une cadence élevée, plus vite vous pouvez atteindre votre objectif. Les durées publicitaires sont présentées simplement ; le calcul contractuel utilise les jours réels de paiement.</p></div>
+<div class="plans">
+<div class="plan"><h3>🚀 RAPIDE</h3><div>À partir de 4 mois</div><div class="price">1 000 000 F</div><div class="day">≈ 8 500 F / jour</div><ul><li>Cadence élevée</li><li>Objectif rapide</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('fast')">Choisir RAPIDE</a></div>
+<div class="plan featured"><div class="tag">POPULAIRE</div><h3>⚡ ÉQUILIBRE</h3><div>À partir de 6 mois</div><div class="price">1 100 000 F</div><div class="day">≈ 6 500 F / jour</div><ul><li>Cadence intermédiaire</li><li>Équilibre activité/paiement</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('balance')">Choisir ÉQUILIBRE</a></div>
+<div class="plan"><h3>🏆 PROPRIÉTAIRE</h3><div>À partir de 8 mois</div><div class="price">1 200 000 F</div><div class="day">≈ 5 400 F / jour</div><ul><li>Cadence plus légère</li><li>Plus de souplesse</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('flex')">Choisir PROPRIÉTAIRE</a></div>
+</div>
+</div>
+</section>
+
+<section id="how" style="background:#eef2f6">
+<div class="wrap"><div class="section-title"><h2>Comment ça marche ?</h2><p>Un processus clair, sans promesse d'approbation automatique.</p></div>
+<div class="steps">
+<div class="step"><div class="num">1</div><h3>Candidature</h3><p class="hint">Remplissez le formulaire depuis Facebook, Instagram, TikTok, WhatsApp ou le site.</p></div>
+<div class="step"><div class="num">2</div><h3>Présélection</h3><p class="hint">D-BOSS vérifie les conditions préliminaires et la cohérence des informations.</p></div>
+<div class="step"><div class="num">3</div><h3>Contact</h3><p class="hint">Si les conditions sont remplies, un conseiller vous contacte pour poursuivre l'étude.</p></div>
+<div class="step"><div class="num">4</div><h3>Vérification & décision</h3><p class="hint">Les preuves nécessaires sont vérifiées avant toute approbation et contractualisation.</p></div>
+</div></div>
+</section>
+
+<section id="apply">
+<div class="wrap form-wrap">
+<div class="info">
+<div class="eyebrow">Candidature D-BOSS MOTOS</div>
+<h2>Commencez votre candidature.</h2>
+<ul>
+<li>✓ Formulaire sécurisé et progressif</li>
+<li>✓ Présélection avant contact</li>
+<li>✓ Aucune approbation automatique</li>
+<li>✓ Votre formule peut être choisie dès maintenant</li>
+</ul>
+<p style="color:#dce7f4;font-size:13px">Conseil : préparez vos informations d'identité, activité, revenus et expérience. Les justificatifs complémentaires pourront être demandés uniquement à l'étape suivante.</p>
+</div>
+
+<div class="form">
+<h2 style="margin-top:0">Candidature en ligne</h2>
+<div class="progress"><i id="prog"></i></div>
+<form id="application">
+<div class="stepform active" data-step="1">
+<h3>1. Vos coordonnées</h3>
+<div class="row"><div class="field"><label>Nom complet *</label><input id="name" required></div><div class="field"><label>Téléphone / WhatsApp *</label><input id="phone" type="tel" required></div></div>
+<div class="row"><div class="field"><label>Date de naissance *</label><input id="dob" type="date" required></div><div class="field"><label>Ville / Quartier *</label><input id="address" required></div></div>
+<div class="field"><label>Source de candidature</label><select id="source"><option>Facebook</option><option>Instagram</option><option>TikTok</option><option>WhatsApp</option><option>Website</option><option>Referral</option></select></div>
+<div class="form-actions"><span></span><button type="button" class="btn primary" onclick="next()">Continuer →</button></div>
+</div>
+
+<div class="stepform" data-step="2">
+<h3>2. Votre profil conducteur</h3>
+<div class="row"><div class="field"><label>Expérience moto</label><select id="experience"><option value="0">Moins de 3 mois</option><option value="3">3–6 mois</option><option value="6">6–12 mois</option><option value="12">1–2 ans</option><option value="24">2–5 ans</option><option value="60">Plus de 5 ans</option></select></div><div class="field"><label>Permis de conduire valide ?</label><select id="licence"><option value="yes">Oui</option><option value="no">Non</option><option value="pending">En cours</option></select></div></div>
+<div class="row"><div class="field"><label>Activité principale</label><select id="activity"><option>Moto-taxi</option><option>Livraison</option><option>Transport</option><option>Commerce</option><option>Salarié</option><option>Indépendant</option><option>Autre</option></select></div><div class="field"><label>Depuis combien de temps ?</label><select id="activityAge"><option>Moins de 6 mois</option><option>6–12 mois</option><option>1–2 ans</option><option>Plus de 2 ans</option></select></div></div>
+<div class="row"><div class="field"><label>Durée de résidence</label><select id="residence"><option value="0">Moins de 6 mois</option><option value="1">6–12 mois</option><option value="2">Plus d'un an</option></select></div><div class="field"><label>Avez-vous déjà conduit professionnellement ?</label><select id="professional"><option value="yes">Oui</option><option value="no">Non</option></select></div></div>
+<div class="form-actions"><button type="button" class="btn outline" onclick="back()">← Retour</button><button type="button" class="btn primary" onclick="next()">Continuer →</button></div>
+</div>
+
+<div class="stepform" data-step="3">
+<h3>3. Capacité & formule</h3>
+<p class="hint">Ces informations servent à la présélection. Elles ne constituent pas une approbation.</p>
+<div class="row"><div class="field"><label>Revenu journalier moyen (FCFA)</label><input id="revenue" type="number" min="0" required></div><div class="field"><label>Carburant / coûts d'activité par jour</label><input id="fuel" type="number" min="0" required></div></div>
+<div class="row"><div class="field"><label>Charges essentielles par jour</label><input id="obligations" type="number" min="0" required></div><div class="field"><label>Autres coûts par jour</label><input id="othercost" type="number" min="0" value="0"></div></div>
+<div class="field"><label>Formule souhaitée</label><select id="plan"><option value="fast">🚀 RAPIDE — À partir de 4 mois — 1 000 000 F</option><option value="balance" selected>⚡ ÉQUILIBRE — À partir de 6 mois — 1 100 000 F</option><option value="flex">🏆 PROPRIÉTAIRE — À partir de 8 mois — 1 200 000 F</option></select></div>
+<div class="field"><label class="consent"><input id="consent" type="checkbox" required><span>J'accepte que D-BOSS MOTOS utilise les informations fournies pour traiter ma candidature et effectuer les vérifications nécessaires conformément à sa politique de confidentialité.</span></label></div>
+<div class="form-actions"><button type="button" class="btn outline" onclick="back()">← Retour</button><button class="btn primary" type="submit">🚀 Soumettre ma candidature</button></div>
+</div>
+</form>
+<div id="result" class="result"></div>
+</div>
+</div>
+</section>
+
+<section style="background:#eef2f6">
+<div class="wrap"><div class="section-title"><h2>Questions fréquentes</h2></div>
+<div class="faq">
+<details><summary>Est-ce que remplir le formulaire signifie que je suis accepté ?</summary><p>Non. Le formulaire déclenche une présélection. Un contact et des vérifications complémentaires peuvent être nécessaires avant toute approbation.</p></details>
+<details><summary>Pourquoi les durées sont-elles « à partir de 4, 6 ou 8 mois » ?</summary><p>La publicité utilise des durées simples. Le calcul contractuel repose sur les jours réels de paiement à raison de 6 jours par semaine.</p></details>
+<details><summary>Quand D-BOSS me contacte-t-il ?</summary><p>Si les conditions préliminaires sont remplies, votre candidature passe à l'étape de contact pour poursuivre l'étude du dossier.</p></details>
+<details><summary>La moto devient-elle ma propriété ?</summary><p>Le transfert de propriété intervient conformément aux conditions et au contrat de vente à tempérament applicables après accomplissement des obligations prévues.</p></details>
+</div></div>
+</section>
+
+<footer><div class="wrap"><div class="footergrid"><div><b>D-BOSS MOTOS</b><div style="margin-top:7px">Travaillez. Payez. Devenez propriétaire.</div></div><div><b>Candidature</b><div style="margin-top:7px"><a href="#apply" style="color:#dce7f4">Commencer maintenant</a></div></div></div>
+<div class="legal">Informations fournies à titre de présélection. Une candidature en ligne ne constitue pas une approbation, une promesse de financement ou un engagement de transfert de propriété. Les conditions définitives sont celles du contrat D-BOSS MOTOS applicable. Les informations personnelles doivent être traitées conformément à la politique de confidentialité et aux exigences légales applicables.</div></div></footer>
+
+<a id="wa" class="whatsapp" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+
+<script>
+/* ===== D-BOSS CONFIGURATION =====
+   Replace WHATSAPP_NUMBER with the official business number in international format.
+   Example Cameroon: 2376XXXXXXXX (digits only).
+   Replace SUBMIT_ENDPOINT with your production API endpoint when the backend is ready.
+*/
+const CONFIG={WHATSAPP_NUMBER:"",SUBMIT_ENDPOINT:""};
+const plans={fast:{target:1000000,daily:8500},balance:{target:1100000,daily:6500},flex:{target:1200000,daily:5400}};
+let currentStep=1;
+
+function qs(id){return document.getElementById(id)}
+function setProgress(){qs("prog").style.width=(currentStep/3*100)+"%";document.querySelectorAll(".stepform").forEach(x=>x.classList.toggle("active",+x.dataset.step===currentStep))}
+function next(){
+ if(currentStep===1){
+  for(const id of ["name","phone","dob","address"]) if(!qs(id).reportValidity()) return;
+ }
+ currentStep=Math.min(3,currentStep+1);setProgress();window.location.hash="apply";
+}
+function back(){currentStep=Math.max(1,currentStep-1);setProgress()}
+function pick(p){qs("plan").value=p}
+function showResult(type,title,msg){
+ const r=qs("result");r.className="result show "+type;r.innerHTML="<b>"+title+"</b><p>"+msg+"</p>";
+}
+function preQualification(){
+ const p=plans[qs("plan").value], rev=+qs("revenue").value||0, fuel=+qs("fuel").value||0, ob=+qs("obligations").value||0, other=+qs("othercost").value||0;
+ const capacity=Math.max(0,rev-fuel-ob-other), ratio=capacity/p.daily;
+ let score=0;
+ if(qs("name").value.trim()&&qs("phone").value.trim()&&qs("address").value.trim())score+=20;
+ if(+qs("residence").value>=1)score+=10;
+ const exp=+qs("experience").value; if(exp>=12)score+=20;else if(exp>=6)score+=12;else if(exp>=3)score+=6;
+ if(qs("licence").value==="yes")score+=15;
+ if(rev>0)score+=10;
+ if(ratio>=1.3)score+=25;else if(ratio>=1)score+=15;else if(ratio>=.8)score+=8;
+ return {score,ratio,capacity,plan:qs("plan").value};
+}
+function getSource(){
+ const p=new URLSearchParams(location.search);
+ const map={fb:"Facebook",facebook:"Facebook",ig:"Instagram",instagram:"Instagram",tt:"TikTok",tiktok:"TikTok",wa:"WhatsApp",whatsapp:"WhatsApp"};
+ return map[(p.get("utm_source")||p.get("source")||"").toLowerCase()]||qs("source").value;
+}
+async function submitApplication(e){
+ e.preventDefault();
+ if(!qs("consent").checked){showResult("error","Consent required","Please accept the data-processing notice before submitting.");return}
+ const result=preQualification();
+ const id="DBM-CUS-"+Date.now().toString().slice(-8);
+ const data={
+  applicant_id:id,name:qs("name").value.trim(),phone:qs("phone").value.trim(),dob:qs("dob").value,
+  address:qs("address").value.trim(),source:getSource(),experience_months:+qs("experience").value,
+  licence:qs("licence").value,activity:qs("activity").value,activity_duration:qs("activityAge").value,
+  residence_duration:qs("residence").value,professional:qs("professional").value,
+  daily_revenue:+qs("revenue").value||0,daily_fuel:+qs("fuel").value||0,
+  daily_obligations:+qs("obligations").value||0,daily_other_cost:+qs("othercost").value||0,
+  selected_plan:result.plan,pre_screening_status:result.score>=75?"PRE_QUALIFIED":result.score>=55?"TO_COMPLETE":"NOT_PRE_QUALIFIED",
+  created_at:new Date().toISOString(),
+  campaign:new URLSearchParams(location.search).get("utm_campaign")||"",
+  utm_medium:new URLSearchParams(location.search).get("utm_medium")||""
+ };
+ localStorage.setItem(id,JSON.stringify(data));
+ if(CONFIG.SUBMIT_ENDPOINT){
+  try{await fetch(CONFIG.SUBMIT_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(data)})}catch(err){}
+ }
+ qs("application").style.display="none";
+ if(data.pre_screening_status==="PRE_QUALIFIED"){
+  showResult("success","✅ Candidature reçue — étape préliminaire favorable","Merci "+data.name+". Votre candidature répond aux conditions préliminaires du système. Un conseiller D-BOSS MOTOS vous contactera pour poursuivre les vérifications. Référence : <b>"+id+"</b>.");
+ }else if(data.pre_screening_status==="TO_COMPLETE"){
+  showResult("warning","🟠 Candidature reçue — informations à compléter","Merci "+data.name+". Votre candidature a bien été enregistrée. Certaines informations ou vérifications complémentaires sont nécessaires avant de poursuivre. Référence : <b>"+id+"</b>.");
+ }else{
+  showResult("warning","Candidature reçue","Merci pour votre intérêt. Votre dossier ne remplit pas actuellement les conditions préliminaires nécessaires pour poursuivre automatiquement le processus. Référence : <b>"+id+"</b>.");
+ }
+}
+qs("application").addEventListener("submit",submitApplication);
+function setupTracking(){
+ const p=new URLSearchParams(location.search);
+ const src=getSource();if(src)qs("source").value=src;
+ const campaign=p.get("utm_campaign")||p.get("campaign");if(campaign)document.body.dataset.campaign=campaign;
+ const wa=qs("wa");
+ if(CONFIG.WHATSAPP_NUMBER){wa.href="https://wa.me/"+CONFIG.WHATSAPP_NUMBER+"?text="+encodeURIComponent("Bonjour D-BOSS MOTOS, je souhaite candidater au programme moto.");}
+ else {wa.href="#apply";wa.onclick=()=>{document.getElementById("apply").scrollIntoView({behavior:"smooth"});return false}}
+}
+function toggleLang(){alert("La version bilingue FR/EN peut être activée dans la prochaine production.")}
+setProgress();setupTracking();
+</script>
+</body>
+</html>

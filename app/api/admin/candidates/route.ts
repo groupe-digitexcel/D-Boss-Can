@@ -1,0 +1,2 @@
+import {NextResponse} from 'next/server'; import {isAdmin} from '@/lib/admin-auth'; import {getSupabaseAdmin} from '@/lib/supabase-admin';
+export async function GET(){if(!(await isAdmin()))return NextResponse.json({error:'Unauthorized'},{status:401}); const sb=getSupabaseAdmin(); const {data,error}=await sb.from('candidate_applications').select('*').order('created_at',{ascending:false}).limit(500); if(error)return NextResponse.json({error:error.message},{status:500}); return NextResponse.json({data});}
