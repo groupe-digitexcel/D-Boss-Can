@@ -55,9 +55,9 @@ footer{background:var(--navy);color:#dce7f4;padding:35px 0}.footergrid{display:f
 <div class="wrap">
 <div class="section-title"><h2>Choisissez votre cadence</h2><p>Plus vous choisissez une cadence élevée, plus vite vous pouvez atteindre votre objectif. Les durées publicitaires sont présentées simplement ; le calcul contractuel utilise les jours réels de paiement.</p></div>
 <div class="plans">
-<div class="plan"><h3>🚀 RAPIDE</h3><div>À partir de 4 mois</div><div class="price">1 000 000 F</div><div class="day">≈ 8 500 F / jour</div><ul><li>Cadence élevée</li><li>Objectif rapide</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('fast')">Choisir RAPIDE</a></div>
-<div class="plan featured"><div class="tag">POPULAIRE</div><h3>⚡ ÉQUILIBRE</h3><div>À partir de 6 mois</div><div class="price">1 100 000 F</div><div class="day">≈ 6 500 F / jour</div><ul><li>Cadence intermédiaire</li><li>Équilibre activité/paiement</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('balance')">Choisir ÉQUILIBRE</a></div>
-<div class="plan"><h3>🏆 PROPRIÉTAIRE</h3><div>À partir de 8 mois</div><div class="price">1 200 000 F</div><div class="day">≈ 5 400 F / jour</div><ul><li>Cadence plus légère</li><li>Plus de souplesse</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('flex')">Choisir PROPRIÉTAIRE</a></div>
+<div class="plan"><h3>🚀 FAST</h3><div>6 mois</div><div class="price">1 000 000 F</div><div class="day">6 500 F / jour</div><ul><li>Cadence élevée</li><li>Objectif rapide</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('fast')">Choisir FAST</a></div>
+<div class="plan featured"><div class="tag">POPULAIRE</div><h3>⚡ BALANCE</h3><div>8 mois</div><div class="price">1 100 000 F</div><div class="day">5 500 F / jour</div><ul><li>Cadence intermédiaire</li><li>Équilibre activité/paiement</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('balance')">Choisir BALANCE</a></div>
+<div class="plan"><h3>🏆 FLEX</h3><div>10 mois</div><div class="price">1 200 000 F</div><div class="day">4 500 F / jour</div><ul><li>Cadence plus légère</li><li>Plus de souplesse</li><li>Calcul sur 6 jours/semaine</li></ul><a class="btn primary" style="width:100%" href="#apply" onclick="pick('flex')">Choisir FLEX</a></div>
 </div>
 </div>
 </section>
@@ -111,7 +111,7 @@ footer{background:var(--navy);color:#dce7f4;padding:35px 0}.footergrid{display:f
 <p class="hint">Ces informations servent à la présélection. Elles ne constituent pas une approbation.</p>
 <div class="row"><div class="field"><label>Revenu journalier moyen (FCFA)</label><input id="revenue" type="number" min="0" required></div><div class="field"><label>Carburant / coûts d'activité par jour</label><input id="fuel" type="number" min="0" required></div></div>
 <div class="row"><div class="field"><label>Charges essentielles par jour</label><input id="obligations" type="number" min="0" required></div><div class="field"><label>Autres coûts par jour</label><input id="othercost" type="number" min="0" value="0"></div></div>
-<div class="field"><label>Formule souhaitée</label><select id="plan"><option value="fast">🚀 RAPIDE — À partir de 4 mois — 1 000 000 F</option><option value="balance" selected>⚡ ÉQUILIBRE — À partir de 6 mois — 1 100 000 F</option><option value="flex">🏆 PROPRIÉTAIRE — À partir de 8 mois — 1 200 000 F</option></select></div>
+<div class="field"><label>Formule souhaitée</label><select id="plan"><option value="fast">🚀 FAST — 6 mois — 6 500 F/j — 1 000 000 F</option><option value="balance" selected>⚡ BALANCE — 8 mois — 5 500 F/j — 1 100 000 F</option><option value="flex">🏆 FLEX — 10 mois — 4 500 F/j — 1 200 000 F</option></select></div>
 <div class="field"><label class="consent"><input id="consent" type="checkbox" required><span>J'accepte que D-BOSS MOTOS utilise les informations fournies pour traiter ma candidature et effectuer les vérifications nécessaires conformément à sa politique de confidentialité.</span></label></div>
 <div class="form-actions"><button type="button" class="btn outline" onclick="back()">← Retour</button><button class="btn primary" type="submit">🚀 Soumettre ma candidature</button></div>
 </div>
@@ -125,7 +125,7 @@ footer{background:var(--navy);color:#dce7f4;padding:35px 0}.footergrid{display:f
 <div class="wrap"><div class="section-title"><h2>Questions fréquentes</h2></div>
 <div class="faq">
 <details><summary>Est-ce que remplir le formulaire signifie que je suis accepté ?</summary><p>Non. Le formulaire déclenche une présélection. Un contact et des vérifications complémentaires peuvent être nécessaires avant toute approbation.</p></details>
-<details><summary>Pourquoi les durées sont-elles « à partir de 4, 6 ou 8 mois » ?</summary><p>La publicité utilise des durées simples. Le calcul contractuel repose sur les jours réels de paiement à raison de 6 jours par semaine.</p></details>
+<details><summary>Pourquoi les durées affichées sont-elles 6, 8 ou 10 mois ?</summary><p>La publicité utilise des durées simples. Le calcul contractuel repose sur les jours réels de paiement à raison de 6 jours par semaine.</p></details>
 <details><summary>Quand D-BOSS me contacte-t-il ?</summary><p>Si les conditions préliminaires sont remplies, votre candidature passe à l'étape de contact pour poursuivre l'étude du dossier.</p></details>
 <details><summary>La moto devient-elle ma propriété ?</summary><p>Le transfert de propriété intervient conformément aux conditions et au contrat de vente à tempérament applicables après accomplissement des obligations prévues.</p></details>
 </div></div>
@@ -143,7 +143,7 @@ footer{background:var(--navy);color:#dce7f4;padding:35px 0}.footergrid{display:f
    Replace SUBMIT_ENDPOINT with your production API endpoint when the backend is ready.
 */
 const CONFIG={WHATSAPP_NUMBER:"",SUBMIT_ENDPOINT:""};
-const plans={fast:{target:1000000,daily:8500},balance:{target:1100000,daily:6500},flex:{target:1200000,daily:5400}};
+const plans={fast:{target:1000000,daily:6500,months:6},balance:{target:1100000,daily:5500,months:8},flex:{target:1200000,daily:4500,months:10}};
 let currentStep=1;
 
 function qs(id){return document.getElementById(id)}
